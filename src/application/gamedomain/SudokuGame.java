@@ -2,13 +2,14 @@ package application.gamedomain;
 
 import java.io.Serializable;
 
+import application.computationlogic.SudokuUtilities;
 import application.gameconstants.GameState;
 
 public class SudokuGame implements Serializable{
 	private final GameState gamestate;
 	private final int[][] boardState;
 	
-	private static final int BOUNDARY = 9;
+	public static final int BOUNDARY = 9;
 	
 	public SudokuGame(GameState gamestate, int[][] boardState) {
 		super();
